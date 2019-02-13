@@ -27,6 +27,7 @@ class User extends Component {
 
   componentWillMount() {
     this.fetchUsers();
+    setInterval(this.fetchUsers, 1000);
   }
 
   render() {
